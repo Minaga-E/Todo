@@ -18,13 +18,25 @@ struct ContentView: View {
         NavigationStack {
             List($todos) { $todo in
                 
-                HStack {
-                    Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
-                        .onTapGesture {
-                            todo.isCompleted.toggle()
+                NavigationLink {
+                    TodoDetailView(todo: $todo)
+                } label: {
+                    HStack {
+                        Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
+                            .onTapGesture {
+                                todo.isCompleted.toggle()
+                            }
+                        VStack {
+                            Text(todo.title)
+                                .strikethrough(todo.isCompleted)
+                            if !todo.subtitle.isEmpty{
+                                Text(todo.subtitle)
+                                    .font(.footnote)
+                                    .foregroundColor(.gray)
+                                    .strikethrough(todo.isCompleted)
+                            }
                         }
-                    Text(todo.title)
-                        .strikethrough(todo.isCompleted)
+                    }
                 }
             }
             .navigationTitle("Todos")
