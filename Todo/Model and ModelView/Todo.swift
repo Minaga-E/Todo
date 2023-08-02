@@ -1,5 +1,7 @@
 import Foundation
-struct Todo: Identifiable {
+import SwiftUI
+
+struct Todo: Identifiable, Codable {
     let id = UUID()
     var title : String
     var subtitle = ""

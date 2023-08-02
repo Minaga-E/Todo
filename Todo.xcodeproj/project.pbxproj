@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		599DBCC42A7A2C8400A04EBD /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC32A7A2C8400A04EBD /* TodoRowView.swift */; };
+		599DBCC62A7A2E7400A04EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC52A7A2E7400A04EBD /* ContentView.swift */; };
+		599DBCC82A7A30AA00A04EBD /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC72A7A30AA00A04EBD /* TodoManager.swift */; };
+		599DBCCA2A7A331B00A04EBD /* Todo+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC92A7A331B00A04EBD /* Todo+Sample.swift */; };
 		59E195022A70F24C006D2E6B /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E195012A70F24C006D2E6B /* TodoApp.swift */; };
-		59E195042A70F24C006D2E6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E195032A70F24C006D2E6B /* ContentView.swift */; };
 		59E195062A70F24C006D2E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E195052A70F24C006D2E6B /* Assets.xcassets */; };
 		59E195092A70F24C006D2E6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E195082A70F24C006D2E6B /* Preview Assets.xcassets */; };
 		59E195102A70F355006D2E6B /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1950F2A70F355006D2E6B /* Todo.swift */; };
 		59E195122A70F98C006D2E6B /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E195112A70F98C006D2E6B /* TodoDetailView.swift */; };
+		59E195142A710BA3006D2E6B /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E195132A710BA3006D2E6B /* NewTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		599DBCC32A7A2C8400A04EBD /* TodoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowView.swift; sourceTree = "<group>"; };
+		599DBCC52A7A2E7400A04EBD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		599DBCC72A7A30AA00A04EBD /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
+		599DBCC92A7A331B00A04EBD /* Todo+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Sample.swift"; sourceTree = "<group>"; };
 		59E194FE2A70F24C006D2E6B /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E195012A70F24C006D2E6B /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
-		59E195032A70F24C006D2E6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59E195052A70F24C006D2E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59E195082A70F24C006D2E6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59E1950F2A70F355006D2E6B /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		59E195112A70F98C006D2E6B /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
+		59E195132A710BA3006D2E6B /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,11 +44,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		599DBCC02A7A2BD300A04EBD /* Model and ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				59E1950F2A70F355006D2E6B /* Todo.swift */,
+				599DBCC72A7A30AA00A04EBD /* TodoManager.swift */,
+				599DBCC92A7A331B00A04EBD /* Todo+Sample.swift */,
+			);
+			path = "Model and ModelView";
+			sourceTree = "<group>";
+		};
+		599DBCC22A7A2C0B00A04EBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59E195132A710BA3006D2E6B /* NewTodoView.swift */,
+				59E195112A70F98C006D2E6B /* TodoDetailView.swift */,
+				599DBCC32A7A2C8400A04EBD /* TodoRowView.swift */,
+				599DBCC52A7A2E7400A04EBD /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		59E194F52A70F24C006D2E6B = {
 			isa = PBXGroup;
 			children = (
-				59E195112A70F98C006D2E6B /* TodoDetailView.swift */,
-				59E1950F2A70F355006D2E6B /* Todo.swift */,
 				59E195002A70F24C006D2E6B /* Todo */,
 				59E194FF2A70F24C006D2E6B /* Products */,
 			);
@@ -57,8 +84,9 @@
 		59E195002A70F24C006D2E6B /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				599DBCC02A7A2BD300A04EBD /* Model and ModelView */,
+				599DBCC22A7A2C0B00A04EBD /* Views */,
 				59E195012A70F24C006D2E6B /* TodoApp.swift */,
-				59E195032A70F24C006D2E6B /* ContentView.swift */,
 				59E195052A70F24C006D2E6B /* Assets.xcassets */,
 				59E195072A70F24C006D2E6B /* Preview Content */,
 			);
@@ -143,10 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59E195042A70F24C006D2E6B /* ContentView.swift in Sources */,
+				599DBCC42A7A2C8400A04EBD /* TodoRowView.swift in Sources */,
 				59E195102A70F355006D2E6B /* Todo.swift in Sources */,
+				599DBCC62A7A2E7400A04EBD /* ContentView.swift in Sources */,
 				59E195022A70F24C006D2E6B /* TodoApp.swift in Sources */,
+				59E195142A710BA3006D2E6B /* NewTodoView.swift in Sources */,
 				59E195122A70F98C006D2E6B /* TodoDetailView.swift in Sources */,
+				599DBCC82A7A30AA00A04EBD /* TodoManager.swift in Sources */,
+				599DBCCA2A7A331B00A04EBD /* Todo+Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
