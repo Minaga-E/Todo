@@ -11,6 +11,8 @@
 		599DBCC62A7A2E7400A04EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC52A7A2E7400A04EBD /* ContentView.swift */; };
 		599DBCC82A7A30AA00A04EBD /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC72A7A30AA00A04EBD /* TodoManager.swift */; };
 		599DBCCA2A7A331B00A04EBD /* Todo+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBCC92A7A331B00A04EBD /* Todo+Sample.swift */; };
+		59C292032A8CA91F008966D2 /* MainTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C292022A8CA91F008966D2 /* MainTodoListView.swift */; };
+		59C292062A8CA960008966D2 /* HowManyMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C292052A8CA960008966D2 /* HowManyMoreView.swift */; };
 		59E195022A70F24C006D2E6B /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E195012A70F24C006D2E6B /* TodoApp.swift */; };
 		59E195062A70F24C006D2E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E195052A70F24C006D2E6B /* Assets.xcassets */; };
 		59E195092A70F24C006D2E6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E195082A70F24C006D2E6B /* Preview Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		599DBCC52A7A2E7400A04EBD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		599DBCC72A7A30AA00A04EBD /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 		599DBCC92A7A331B00A04EBD /* Todo+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Sample.swift"; sourceTree = "<group>"; };
+		59C292022A8CA91F008966D2 /* MainTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoListView.swift; sourceTree = "<group>"; };
+		59C292052A8CA960008966D2 /* HowManyMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyMoreView.swift; sourceTree = "<group>"; };
 		59E194FE2A70F24C006D2E6B /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E195012A70F24C006D2E6B /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		59E195052A70F24C006D2E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,12 +61,30 @@
 		599DBCC22A7A2C0B00A04EBD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				59E195132A710BA3006D2E6B /* NewTodoView.swift */,
-				59E195112A70F98C006D2E6B /* TodoDetailView.swift */,
-				599DBCC32A7A2C8400A04EBD /* TodoRowView.swift */,
 				599DBCC52A7A2E7400A04EBD /* ContentView.swift */,
+				59C292042A8CA927008966D2 /* Main Todo List Tab */,
+				59C292072A8CA966008966D2 /* How Many Todos  Tab */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		59C292042A8CA927008966D2 /* Main Todo List Tab */ = {
+			isa = PBXGroup;
+			children = (
+				59E195132A710BA3006D2E6B /* NewTodoView.swift */,
+				59E195112A70F98C006D2E6B /* TodoDetailView.swift */,
+				59C292022A8CA91F008966D2 /* MainTodoListView.swift */,
+				599DBCC32A7A2C8400A04EBD /* TodoRowView.swift */,
+			);
+			path = "Main Todo List Tab";
+			sourceTree = "<group>";
+		};
+		59C292072A8CA966008966D2 /* How Many Todos  Tab */ = {
+			isa = PBXGroup;
+			children = (
+				59C292052A8CA960008966D2 /* HowManyMoreView.swift */,
+			);
+			path = "How Many Todos  Tab";
 			sourceTree = "<group>";
 		};
 		59E194F52A70F24C006D2E6B = {
@@ -172,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				599DBCC42A7A2C8400A04EBD /* TodoRowView.swift in Sources */,
+				59C292062A8CA960008966D2 /* HowManyMoreView.swift in Sources */,
 				59E195102A70F355006D2E6B /* Todo.swift in Sources */,
 				599DBCC62A7A2E7400A04EBD /* ContentView.swift in Sources */,
 				59E195022A70F24C006D2E6B /* TodoApp.swift in Sources */,
+				59C292032A8CA91F008966D2 /* MainTodoListView.swift in Sources */,
 				59E195142A710BA3006D2E6B /* NewTodoView.swift in Sources */,
 				59E195122A70F98C006D2E6B /* TodoDetailView.swift in Sources */,
 				599DBCC82A7A30AA00A04EBD /* TodoManager.swift in Sources */,

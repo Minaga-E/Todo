@@ -7,7 +7,28 @@ class TodoManager: ObservableObject {
             save()
         }
     }
+    @Published var searchTerm = ""
+    
+    var todosFiltered: Binding<[Todo]> {
+        Binding (
+            get: {
+                if self.searchTerm == "" { return self.todos }
+                return self.todos.filter {
+                    $0.title.lowercased().contains(self.searchTerm.lowercased())
+                    
+                }
+            },
+            set: {
+                self.todos = $0
+                
+            }
+        )
         
+    }
+    
+    var numTodosLeft: Int {todos.filter{!$0.isCompleted}.count }
+    var numTodosDone: Int {todos.filter{$0.isCompleted }.count}
+    
     init() {
         load()
     }
@@ -33,9 +54,9 @@ class TodoManager: ObservableObject {
         let archiveURL = getArchiveURL()
         print(archiveURL)
         let propertyListDecoder = PropertyListDecoder()
-                
+        
         if let retrievedTodoData = try? Data(contentsOf: archiveURL),
-            let todosDecoded = try? propertyListDecoder.decode([Todo].self, from: retrievedTodoData) {
+           let todosDecoded = try? propertyListDecoder.decode([Todo].self, from: retrievedTodoData) {
             todos = todosDecoded
         }
     }
